@@ -1,0 +1,29 @@
+#terminal * {
+    font-size: 0.9rem;
+}
+
+.help {
+    color: orange;
+}
+
+.link {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+.cv {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+.cv:hover {
+    text-decoration: underline;
+}
