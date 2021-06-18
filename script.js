@@ -2,8 +2,10 @@ const timestamp = new Timestamp();
 jQuery(function($, undefined) {
     $('#terminal').terminal(function(command) {
         let s = command.toLowerCase();
-        if (s === 'help' || s === 'ls') {
+        if (s === 'help') {
             this.echo(printList(commands));
+        } else if (s === 'about') {
+            this.echo(about, {raw: true});
         } else if (s === 'skills') {
             this.echo(printList(skills));
         } else if (s === 'edu') {
@@ -12,7 +14,7 @@ jQuery(function($, undefined) {
             this.echo(printList(social));
         } else if (s === 'info') {
             this.echo(printList(info));
-        } else if (s === 'cv') {
+        } else if (s === 'ls') {
             this.echo(`<a class="cv" href="cv_alexandros_alexiou.pdf" target="_blank">${cv}</a>`, {raw: true});
         } else if (s === '') {
             this.echo('', {raw: true});
