@@ -6,6 +6,10 @@
     color: orange;
 }
 
+.error {
+    color: red;
+}
+
 .link {
     color: lightskyblue;
     text-decoration: none;

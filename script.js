@@ -1,27 +1,23 @@
 const timestamp = new Timestamp();
 jQuery(function($, undefined) {
     $('#terminal').terminal(function(command) {
-        switch(command.toLowerCase()) {
-            case 'help':
-                this.echo(printList(commands));
-                break;
-            case 'skills':
-                this.echo(printList(skills));
-                break;
-            case 'edu':
-                this.echo(printList(edu));
-                break;
-            case 'social':
-                this.echo(printList(social));
-                break;
-            case 'info':
-                this.echo(printList(info));
-                break;
-            case 'cv':
-                this.echo(`<a class="cv" href="cv_alexandros_alexiou.pdf" target="_blank">${cv}</a>`, {raw: true});
-                break;
-            default:
-                this.error('> Command not found. Type help for a list of commands.');
+        let s = command.toLowerCase();
+        if (s === 'help' || s === 'ls') {
+            this.echo(printList(commands));
+        } else if (s === 'skills') {
+            this.echo(printList(skills));
+        } else if (s === 'edu') {
+            this.echo(printList(edu));
+        } else if (s === 'social') {
+            this.echo(printList(social));
+        } else if (s === 'info') {
+            this.echo(printList(info));
+        } else if (s === 'cv') {
+            this.echo(`<a class="cv" href="cv_alexandros_alexiou.pdf" target="_blank">${cv}</a>`, {raw: true});
+        } else if (s === '') {
+            this.echo('', {raw: true});
+        } else {
+            this.echo('<span class="error"> > Command not found. Type help for a list of commands. </span>', {raw: true});
         }
     }, {
         greetings: ``,
