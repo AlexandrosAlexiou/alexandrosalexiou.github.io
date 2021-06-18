@@ -15,11 +15,14 @@ jQuery(function($, undefined) {
         } else if (s === 'info') {
             this.echo(printList(info));
         } else if (s === 'ls') {
-            this.echo(`<a class="cv" style="display:inline-block; padding-top: 0.5rem; padding-bottom: 0.5rem" href="cv_alexandros_alexiou.pdf" target="_blank">${cv}</a>`, {raw: true});
+            this.echo(
+                `<a class="cv" style="display:inline-block; padding-top: 0.5rem; padding-bottom: 0.5rem" href="cv_alexandros_alexiou.pdf" target="_blank">${cv}</a>`,
+                {raw: true}
+            );
         } else if (s === '') {
             this.echo('', {raw: true});
         } else {
-            this.echo('<span class="error"> > Command not found. Type help for a list of commands. </span>', {raw: true});
+            this.echo(`<span class="error"> > Command ${command} not found. Type <i><b>help</b></i> for a list of commands. </span>`, {raw: true});
         }
     }, {
         greetings: ``,
