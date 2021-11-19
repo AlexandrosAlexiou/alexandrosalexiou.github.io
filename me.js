@@ -5,7 +5,7 @@ const commands = [
     '<span class="help">info</span>    -   Contact info',
     '<span class="help">social</span>  -   Social media',
     '<span class="help">ls</span>      -   list of files in folder',
-    '<span class="help">clear</span>   -   Clear output'
+    '<span class="help">clear</span>   -   Clear output',
 ];
 
 const skills = [
@@ -16,7 +16,7 @@ const skills = [
 ];
 
 const edu = [
-    `M.Eng. Student in Computer Science and Engineering,<br>School of Engineering, University of Ioannina`
+    `M.Eng. Student in Computer Science and Engineering, School of Engineering, University of Ioannina`,
 ];
 
 const info = [
