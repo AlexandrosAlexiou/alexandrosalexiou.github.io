@@ -64,7 +64,7 @@ jQuery(function ($, undefined) {
                     `Last login: ${timestamp.day}-${timestamp.month}-${timestamp.year} at ${timestamp.hours}:${timestamp.minutes}:${timestamp.seconds} on ttys000`
                 );
                 this.echo(
-                    `Type [[b;#33FF00;] help ] for a list of [[b;#33FF00;] commands]. Type [[b;#f22;]exit] for shutdown.`
+                    `Type [[b;#33FF00;]help] for a list of [[b;#33FF00;]commands]. Type [[b;#f22;]exit] for shutdown.`
                 );
             },
             onClear: function () {
