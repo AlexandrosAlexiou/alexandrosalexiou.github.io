@@ -9,14 +9,13 @@ const commands = [
 ];
 
 const skills = [
-    `Good knowledge of Java, Python, PHP, JavaScript, SQL, HTML5/CSS3.`,
-    `Familiar with Angular, jQuery, AJAX, Ruby on Rails, Ruby, C/C++.`,
-    `Familiar with the JavaScript ecosystem (Typescript, ES6/7, Node, Babel).`,
+    `Good knowledge of Java, Python, JavaScript/TypeScript, SQL, HTML5/CSS3/Less.`,
+    `Good knowledge of React.js, familiar with Angular.`,
     `Good knowledge of Docker, MySQL and SQL databases in general.`,
 ];
 
 const edu = [
-    `M.Eng. Student in Computer Science and Engineering, School of Engineering, University of Ioannina`,
+    `M.Eng. in Computer Science and Engineering, School of Engineering, University of Ioannina`,
 ];
 
 const info = [
@@ -30,7 +29,7 @@ const social = [
     `https://www.linkedin.com/in/alexandrosalexiou/`,
 ];
 
-const cv = `-rw-r--r--@ 1 alexandrosalexiou  staff  83382 Jun 15 18:36 cv_alexandros_alexiou.pdf`;
+const cv = `-rw-r--r--@ 1 alexandrosalexiou  staff  83382 Mar 15 18:36 cv_alexandros_alexiou.pdf`;
 
 const about = `<p>
 I'm passionate about learning the latest and greatest technologies whether thats the frontend or backend.<br>
